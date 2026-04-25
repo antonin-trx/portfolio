@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonin Trioux | Consultant Informatique Junior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#f8fafc] text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-slate-900 text-white p-1.5 rounded shadow-lg">
+                    <i class="fa-solid fa-terminal text-sm"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tighter text-slate-900">Antonin Trioux</span>
+            </div>
+
+            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">À propos</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Compétences</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projets</a>
+                <a href="#synthese" class="hover:text-blue-600 transition">Synthèse E4</a>
+            </div>
+            <a href="#contact"
+                class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition shadow-md">Me
+                contacter</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span
+                    class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Disponible
+                    pour une alternance</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold mt-6 leading-tight">Antonin Trioux</h1>
+                <p class="text-2xl text-slate-500 mt-4">Étudiant en BTS SIO : Expert en solutions numériques et
+                    cybersécurité.</p>
+                <div class="mt-8 flex space-x-4">
+                    <a href="#contact"
+                        class="px-8 py-3 bg-blue-600 text-white rounded-lg shadow-lg shadow-blue-200 hover:bg-blue-700 transition">Projet
+                        en cours</a>
+                    <a href="#"
+                        class="px-8 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 transition">Télécharger
+                        CV</a>
+                </div>
+            </div>
+            <div class="hidden md:block relative">
+                <div class="w-72 h-72 bg-blue-600 rounded-2xl rotate-3 absolute -z-10 opacity-10"></div>
+                <div class="bg-white p-6 rounded-2xl shadow-xl border border-slate-100">
+                    <pre class="text-sm text-blue-600"><code>// Profil Développeur
+const antonin = {
+  status: "BTS SIO",
+  option: "SISR/SLAM",
+  tools: ["Docker", "Linux", "React"],
+  passion: "Cloud Infrastructure"
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12">Expertises techniques</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl border border-slate-100 hover:border-blue-200 transition">
+                    <div class="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-lg mb-6">
+                        <i class="fa-solid fa-layer-group text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Développement App</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Conception d'architectures MVC, gestion d'APIs
+                        REST et développement front-end moderne.</p>
+                </div>
+                <div class="p-8 rounded-2xl border border-slate-100 hover:border-blue-200 transition">
+                    <div class="w-12 h-12 bg-green-50 flex items-center justify-center rounded-lg mb-6">
+                        <i class="fa-solid fa-shield-halved text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Réseaux & Sécurité</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Administration Windows/Linux, déploiement de VPN,
+                        et sécurisation des protocoles réseaux.</p>
+                </div>
+                <div class="p-8 rounded-2xl border border-slate-100 hover:border-blue-200 transition">
+                    <div class="w-12 h-12 bg-purple-50 flex items-center justify-center rounded-lg mb-6">
+                        <i class="fa-solid fa-cloud text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cloud & DevOps</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Virtualisation (VMware, Proxmox), conteneurisation
+                        Docker et gestion de versioning Git.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="synthese" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">Tableau de Synthèse E4</h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <table class="w-full text-left">
+                    <thead class="bg-slate-900 text-white">
+                        <tr>
+                            <th class="p-5 font-semibold">Référentiel Compétences</th>
+                            <th class="p-5 text-center">Stage #1</th>
+                            <th class="p-5 text-center">Projet GSB</th>
+                            <th class="p-5 text-center">Atelier PPE</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="p-5 font-medium">Gérer le patrimoine informatique</td>
+                            <td class="p-5 text-center text-blue-600"><i class="fa-solid fa-circle-check"></i></td>
+                            <td class="p-5 text-center text-slate-300"><i class="fa-solid fa-circle"></i></td>
+                            <td class="p-5 text-center text-blue-600"><i class="fa-solid fa-circle-check"></i></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="p-5 font-medium">Répondre aux incidents / demandes</td>
+                            <td class="p-5 text-center text-blue-600"><i class="fa-solid fa-circle-check"></i></td>
+                            <td class="p-5 text-center text-blue-600"><i class="fa-solid fa-circle-check"></i></td>
+                            <td class="p-5 text-center text-slate-300"><i class="fa-solid fa-circle"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Lancer une discussion</h2>
+            <p class="text-slate-500 mb-10">Une question sur mon profil ou une opportunité d'alternance ?</p>
+
+            <form id="contact-form" class="text-left space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" id="name" placeholder="Nom complet"
+                        class="w-full p-4 rounded-xl border border-slate-200 focus:border-blue-500 outline-none transition"
+                        required>
+                    <input type="email" id="email" placeholder="Adresse Email"
+                        class="w-full p-4 rounded-xl border border-slate-200 focus:border-blue-500 outline-none transition"
+                        required>
+                </div>
+                <textarea id="message" rows="5" placeholder="Votre message..."
+                    class="w-full p-4 rounded-xl border border-slate-200 focus:border-blue-500 outline-none transition"
+                    required></textarea>
+                <button type="submit"
+                    class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition">Envoyer
+                    le message</button>
+            </form>
+            <div id="form-status" class="mt-4 hidden p-4 rounded-lg bg-green-50 text-green-700 font-medium"></div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-slate-100 text-center text-slate-400 text-sm">
+        <p>© <span id="year"></span> Antonin Trioux • Portfolio Académique</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

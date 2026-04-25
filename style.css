@@ -1,0 +1,29 @@
+/* Suppression du curseur par défaut sur tout le corps du site */
+html, body {
+    cursor: none; /* On cache la souris classique */
+}
+
+/* Création du curseur "Terminal" */
+#custom-cursor {
+    width: 12px;
+    height: 20px;
+    background-color: #2563eb; /* Bleu pro */
+    position: fixed;
+    pointer-events: none; /* Important pour pouvoir cliquer "à travers" */
+    z-index: 9999;
+    transition: transform 0.1s ease-out;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
+
+/* Effet quand on survole un lien ou un bouton */
+.cursor-hover {
+    transform: scale(2);
+    background-color: #0f172a !important; /* Devient noir sur les liens */
+    opacity: 0.5;
+}
+
+/* On remet le pointeur par défaut sur les éléments cliquables pour l'accessibilité */
+a, button, input, textarea {
+    cursor: none; 
+}
